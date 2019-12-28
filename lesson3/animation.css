@@ -1,0 +1,16 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: move 1s infinite;
+    /*animation-play-state: paused;*/
+}
+button:hover ~ div {
+    animation-play-state: running;
+}
+
+@keyframes move {
+    from { height: 100px}
+    50% {height: 300px}
+    to {height: 100px}
+}
